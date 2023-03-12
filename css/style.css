@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 *,* ::before {
     box-sizing:border-box;
@@ -21,8 +21,30 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
 }
 
+.btn {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: 0;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #f02906;
+    min-width: 200px;
+    height: 50px;
+    transition: 0.2;
+}
+
+.btn:hover {
+    background-color: #860505c4;
+}
+
 .header {
-    background-color: #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 .header__wrapper {
@@ -93,10 +115,42 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 
-/* header */
+/* header end */
 
 /* intro start */
 .intro{
-    background: url('../img/intro.jpg');
+    background: url('../img/road_intro.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.intro::after {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .2;
+    content: "";
+}
+
+.intro__content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.intro__block{
+
+}
+
+.intro_title{
+    margin-bottom: 30px;
+    max-width: 790px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
 }
 /* intro end */
